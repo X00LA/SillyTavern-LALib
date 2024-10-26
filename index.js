@@ -6819,3 +6819,7 @@ SlashCommandParser.addCommandObject(SlashCommand.fromProps({ name: '$$',
         ],
     ),
 }));
+
+
+
+toastr.warning('You should switch back to the master branch.', 'LALib', { timeOut: 0 });
