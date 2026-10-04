@@ -37,7 +37,17 @@ Library of STScript commands.
 
 ## Requirements
 
-- *(optional)* [Costumes Plugin](https://github.com/LenAnderson/SillyTavern-Costumes.git) for `/costumes` command.
+- [Costumes Plugin](https://github.com/LenAnderson/SillyTavern-Costumes.git) (server plugin) – **required** for the `/costumes` command. All other commands work without it. Without the plugin, `/costumes` fails with `Failed to retrieve costumes: 404 - Not Found`.
+
+To install the server plugin:
+
+1. Clone it into the `plugins` folder of your SillyTavern installation (not the extensions folder):
+   ```
+   cd SillyTavern/plugins
+   git clone https://github.com/LenAnderson/SillyTavern-Costumes.git
+   ```
+2. Make sure `enableServerPlugins: true` is set in SillyTavern's `config.yaml`.
+3. Restart the SillyTavern server (reloading the browser is not enough).
 
 
 
